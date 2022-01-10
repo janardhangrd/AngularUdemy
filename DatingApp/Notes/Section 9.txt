@@ -1,0 +1,14 @@
+Declare the constants like API Url's in environment.ts/environment.prod.ts files
+Angular will decide which one to use based on environment
+
+Ex/-
+export const environment = {
+  production: false,
+  apiUrl: 'https://localhost:5001/api/'
+};
+//in env.prod.ts
+//apiUrl: 'api/'
+
+
+
+104: Retrieving the list of members

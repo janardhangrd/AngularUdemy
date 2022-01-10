@@ -60,7 +60,8 @@ namespace API.Data
         async Task<IEnumerable<MemberDto>> IUserRepository.GetMembersAsync()
         {
             return await 
-            _context.Users.ProjectTo<IEnumerable<MemberDto>>(_mapper.ConfigurationProvider).ToListAsync();
+            _context.Users
+            .ProjectTo<MemberDto>(_mapper.ConfigurationProvider).ToListAsync();
         }
     }
 }
