@@ -1,0 +1,5 @@
+Use of Reactive Forms
+Angular Validation for inputs
+Implement Custom Validators
+Implement reusable for Controls
+Working with Date

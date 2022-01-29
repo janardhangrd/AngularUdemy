@@ -3,16 +3,14 @@
         <img src = "{{photo.url}}" class="img-thumbnail p-1" />
         <div class="text-center">
             <button 
-            class="btn btn-sm" 
-            (click)="setMainPhoto(photo)"
-            [disabled]="photo.isMain"
-            [ngClass]="photo.isMain ? 'btn-success active':'btn-outline-success'"
-            >Main</button>
+                class="btn btn-sm" 
+                (click)="setMainPhoto(photo)"
+                [disabled]="photo.isMain"
+                [ngClass]="photo.isMain ? 'btn-success active':'btn-outline-success'">Main</button>
             <button 
-            class="btn btn-sm btn-danger" 
-            (click)="deletePhoto(photo.id)"
-            [disabled]="photo.isMain"
-            > <i class="fa fa-trash"></i> </button>
+                class="btn btn-sm btn-danger" 
+                (click)="deletePhoto(photo.id)"
+                [disabled]="photo.isMain"> <i class="fa fa-trash"></i> </button>
         </div>
     </div>
 </div>
