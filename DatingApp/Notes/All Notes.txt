@@ -1,0 +1,38 @@
+Section 9 : 
+    Declare the constants like API Url's in environment.ts/environment.prod.ts files
+    Angular will decide which one to use based on environment
+
+    Ex/-
+    export const environment = {
+    production: false,
+    apiUrl: 'https://localhost:5001/api/'
+    };
+    //in env.prod.ts
+    //apiUrl: 'api/'
+
+    104: Retrieving the list of members
+
+Section 11 : 
+    Photo storage Options: cloudinary.com
+    Using 3rd party API : how to take resource/Authentication from user->API ->3rdPartyAPI
+    Adding related entities: await _context.Users.Include(p=>p.Photos)
+    Updating and Deleting resources:
+    What to return when creating REST based API
+
+
+Section 12 : 
+    Use of Reactive Forms
+    Angular Validation for inputs
+    Implement Custom Validators
+    Implement reusable for Controls
+    Working with Date
+
+Section 13 :
+    How to Implement pagination on the API & Client
+    Deferred Execution using IQueryable
+    How to implement filtering on the API & Client
+    How to implement sorting on the API & Client
+    Using Action Filters
+    Adding TimeAgo pipe
+    Implement caching in the Client for paginated resources
+

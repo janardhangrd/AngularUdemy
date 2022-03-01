@@ -1,6 +1,0 @@
-
-Photo storage Options: cloudinary.com
-Using 3rd party API : how to take resource/Authentication from user->API ->3rdPartyAPI
-Adding related entities: await _context.Users.Include(p=>p.Photos)
-Updating and Deleting resources:
-What to return when creating REST based API
