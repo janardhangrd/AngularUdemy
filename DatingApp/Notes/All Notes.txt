@@ -36,3 +36,7 @@ Section 13 :
     Adding TimeAgo pipe
     Implement caching in the Client for paginated resources
 
+Section 14:
+    How to added Pagination for LikePage( Liked, LikedBy Lists )
+        Look for PaginationParameters( PaginationParams)
+        

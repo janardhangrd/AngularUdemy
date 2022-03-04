@@ -103,6 +103,16 @@ export class MembersService {
     return this.http.put(this.baseUrl + "users/set-main-photo/"+ photoId, {});
   }
 
+  addLike(username: string) {
+    return this.http.post(this.baseUrl + 'likes/' + username,{});
+  }
+
+  getLikes(predicate: string, pageNumber, pageSize) {
+    let params = this.getPaginationHeader(pageNumber, pageSize);
+    params = params.append('predicate', predicate);
+    return this.getPaginatedResult<Partial<Member[]>>(this.baseUrl + 'likes', params);
+  }
+
   private getPaginatedResult<T>(url , params) {
     const paginatedResult: PaginatedResult<Member[]> = new PaginatedResult<Member[]>();
     return this.http.get<Member[]>(url, { observe: 'response', params }).pipe(
